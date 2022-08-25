@@ -12,6 +12,9 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: AzureFileCopy@4
+  inputs:
+    Destination: 'AzureBlob'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
